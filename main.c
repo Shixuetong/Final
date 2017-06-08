@@ -29,10 +29,10 @@ int main (void)
 		LED_Display(temp);
 	if(UART_Flag==1){
 		if(chance==1)
-			sprintf (AD_Data_Buff,"TEMP:%4.2f  摄氏度\r\n",temp);
+			sprintf (AD_Data_Buff,"TEMP:%4.2f  摄氏度\r\n",temp);  
 		else 
 			sprintf (AD_Data_Buff,"TEMP:%4.2f  华氏度\r\n",temp);
-		UART_SendStr(AD_Data_Buff);
+		UART_SendStr(AD_Data_Buff);  //数据发送到串口进行显示
 		UART_Flag=0;
 	}
 	}

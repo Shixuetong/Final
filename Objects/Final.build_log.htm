@@ -27,7 +27,6 @@ Project File Date:  06/07/2017
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 2 (build 183)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
 Build target 'Final'
-compiling Temp.c...
 compiling main.c...
 ADC.h(10): warning:  #1-D: last line of file ends without a newline
   #endif
@@ -36,9 +35,23 @@ KEY.h(9): warning:  #1-D: last line of file ends without a newline
 UART.h(13): warning:  #1-D: last line of file ends without a newline
   #endif
 main.c: 3 warnings, 0 errors
+compiling Key.c...
+KEY.h(9): warning:  #1-D: last line of file ends without a newline
+  #endif
+Key.c: 1 warning, 0 errors
+compiling Display.c...
+compiling Temp.c...
+compiling ADC.c...
+ADC.h(10): warning:  #1-D: last line of file ends without a newline
+  #endif
+ADC.c: 1 warning, 0 errors
+compiling Uart.c...
+UART.h(13): warning:  #1-D: last line of file ends without a newline
+  #endif
+Uart.c: 1 warning, 0 errors
 linking...
 Program Size: Code=10072 RO-data=464 RW-data=36 ZI-data=628  
-".\Objects\Final.axf" - 0 Error(s), 3 Warning(s).
+".\Objects\Final.axf" - 0 Error(s), 6 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -63,15 +76,15 @@ Package Vendor: Keil
 <h2>Collection of Component Files used:</h2>
 
    * Component: ARM::CMSIS:DSP:1.4.6
-      Include file:  CMSIS\Include\arm_math.h
       Library file:  CMSIS\Lib\ARM\arm_cortexM0l_math.lib
+      Include file:  CMSIS\Include\arm_math.h
 
    * Component: ARM::CMSIS:CORE:4.3.0
 
    * Component: Keil::Device:Startup:1.0.0
-      Source file:   Device\Source\ARM\startup_LPC11xx.s
       Source file:   Device\Source\system_LPC11xx.c
-Build Time Elapsed:  00:00:03
+      Source file:   Device\Source\ARM\startup_LPC11xx.s
+Build Time Elapsed:  00:00:09
 </pre>
 </body>
 </html>
