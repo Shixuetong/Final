@@ -4,7 +4,7 @@
 *************************************************************************/
 #include "LPC11xx.h"
 #include "Temp.h"
-float mf58 (uint32_t AD)
+float tem (uint32_t AD)
 {
 	float r=0 , T=0;
 	uint16_t k;
